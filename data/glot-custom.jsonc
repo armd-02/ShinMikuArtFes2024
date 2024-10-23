@@ -1,19 +1,19 @@
 {
 	"site_title": {
-		"ja": "十三アートフェスマップ2024",
+		"ja": "新大阪・三国アートフェスマップ2024",
 		"en": "Juso Art-fes Map 2024"
 	},
 	"site_subtitle": {
-		"ja": "淀川アートネット",
-		"en": "YODOGAWA ART-NET"
+		"ja": "新大阪・三国アートフェス実行委員会",
+		"en": "Shin-Osaka Mikuni Art-fes Executive Committee"
 	},
 	"about": {
-		"ja": "十三アートフェスマップ2024について",
-		"en": "about Juso Art-fes Map 2024"
+		"ja": "新大阪・三国アートフェスマップ2024について",
+		"en": "about hin-Osaka Mikuni Art-fes Map 2024"
 	},
 	"about_message": {
-		"ja": "淀川アートネットが主催している<a href='https://yodogawaartnet.jimdofree.com/%E5%8D%81%E4%B8%89%E3%82%A2%E3%83%BC%E3%83%88%E3%83%95%E3%82%A7%E3%82%B9/%E3%83%95%E3%82%A7%E3%82%B92024%E3%83%88%E3%83%83%E3%83%97/'>十三アートフェス2024</a>をマップに表示します。",
-		"en": "Hosted by Yodogawa Art Net. Show <a href='https://yodogawaartnet.jimdofree.com/%E5%8D%81%E4%B8%89%E3%82%A2%E3%83%BC%E3%83%88%E3%83%95%E3%82%A7%E3%82%B9/%E3%83%95%E3%82%A7%E3%82%B92024%E3%83%88%E3%83%83%E3%83%97/'>Juso Art Fes 2023</a> on the map."
+		"ja": "新大阪・三国アートフェス実行委員会が主催しているイベントや施設情報を表示します。",
+		"en": "Displays information on events and facilities sponsored by the Shin-Osaka Mikuni Art Festival Executive Committee."
 	},
 	"owner": {
 		"ja": "プロジェクトのブログ・サイトへ",
@@ -24,7 +24,7 @@
 		"en": "about playground equipment map"
 	},
 	"licence_message": {
-		"ja": "十三アートフェスマップ2024のデータはOpenStreetMapと独自データを組み合わせています。</a>",
+		"ja": "新大阪・三国アートフェスマップ2024のデータはOpenStreetMapと独自データを組み合わせています。</a>",
 		"en": "The data of Juso Art-fes Map 2024 is a combination of OpenStreetMap and original.</a>"
 	},
 	"more_message": {
