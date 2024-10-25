@@ -2,12 +2,12 @@
 {
 	"map": {
 		"tileName": "OSMFJ", // タイル一覧は config-system.jsonc へ
-		"viewCenter": [135.4822973, 34.7205248],
-		"viewPitch": 40,
-		"maxPitch": 70,
+		"viewCenter": [135.49237, 34.73928],
+		"viewPitch": 30,
+		"maxPitch": 60,
 		"maxBounds": [
-			[135.45, 34.68146],
-			[135.53, 34.75737]
+			[135.4, 34.71],
+			[135.6, 34.77]
 		],
 		"initZoom": 15,
 		"maxZoom": 23,
