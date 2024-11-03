@@ -74,6 +74,11 @@
                     "glot": "act_picture_url3",
                     "type": "image_url",
                     "gsheet": "picture_url3"
+                },
+                "picture_url4": {
+                    "glot": "act_picture_url4",
+                    "type": "image_url",
+                    "gsheet": "picture_url4"
                 }
             }
         }
