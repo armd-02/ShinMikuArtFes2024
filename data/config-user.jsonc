@@ -22,7 +22,7 @@
 		"poiFilter": "filter", // listTable更新時 all:全て / filter:絞り込み / "":非連動
 		"editZoom": {
 			// 編集時に追加するpoiZoom
-			"ShinHigaArtFes2024": 14
+			"ShinMikuArtFes2024": 14
 		}
 	},
 	"etc": {
@@ -63,7 +63,7 @@
 	},
 	"static": {
 		"mode": false,
-		"osmjson": "./data/ShinHigaArtFes2024.json"
+		"osmjson": "./data/ShinMikuArtFes2024.json"
 	},
 	"menu": {
 		"main": [
