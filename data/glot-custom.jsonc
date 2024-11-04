@@ -60,8 +60,8 @@
 		"en": "Reserve"
 	},
 	"act_memo": {
-		"ja": "【説明】",
-		"en": "[Detail] "
+		"ja": "",
+		"en": ""
 	},
 	"act_address": {
 		"ja": "【住所】",

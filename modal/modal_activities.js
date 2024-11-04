@@ -41,21 +41,24 @@ class modal_Activities {
                         case "date":
                             chtml += `<div class='col-12'>${glot.get(form[key].glot)}</div><div class='col-12'>${basic.formatDate(new Date(gdata), "YYYY/MM/DD")}</div>`;
                             break;
+                        case "textarea":
+                            gdata = basic.autoLink(gdata);
+                            chtml += `<div class='col-12'><p><span class="fw-bold"><small>${glot.get(form[key].glot)}</span></small><big>${gdata.replace(/\r?\n/g, "<br>")}</big></p></div>`;
+                            break;
                         case "select":
                         case "text":
-                        case "textarea":
                         case "quiz_choice":
                             if (key !== "quiz_answer" && key !== "title" && gdata !== "") {
                                 gdata = basic.autoLink(gdata);
-                                chtml += `<div class='col-12'><span class="fw-bold">${glot.get(form[key].glot)}</span>${gdata.replace(/\r?\n/g, "<br>")}</div>`;
+                                chtml += `<div class='col-12'><p><span class="fw-bold"><small>${glot.get(form[key].glot)}</span></small>${gdata.replace(/\r?\n/g, "<br>")}</p></div>`;
                             }
                             break;
                         case "quiz_textarea":
-                            chtml += `<div class='col-12'>${glot.get(form[key].glot)}</div><div class='col-12'>${gdata.replace(/\r?\n/g, "<br>")}</div>`;
+                            chtml += `<div class='col-12 p-1'>${glot.get(form[key].glot)}</div><div class='col-12'>${gdata.replace(/\r?\n/g, "<br>")}</div>`;
                             break;
                         case "url":
                             if (gdata !== "http://" && gdata !== "https://" && gdata !== "") {
-                                chtml += `<div class='col-12'><span class="fw-bold">${glot.get(form[key].glot)}</span><a href="${gdata}">${gdata}</a></div>`;
+                                chtml += `<div class='col-12'><p><span class="fw-bold"><small>${glot.get(form[key].glot)}</span></small><a href="${gdata}">${gdata}</a></p></div>`;
                             }
                             break;
                         case "image_url":
