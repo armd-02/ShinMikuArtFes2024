@@ -71,8 +71,8 @@
         "targetName": "activity"
     },
     "static": {
-        "mode": false,
-        "osmjson": "./data/ShinMikuArtFes2024.json"
+        "mode": true,
+        "osmjson": "./data/ShinMikuAll2024.json"
     },
     "menu": {
         "main": [
