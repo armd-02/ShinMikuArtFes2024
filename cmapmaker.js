@@ -40,12 +40,12 @@ class CMapMaker {
 			this.last_modetime = Date.now();
 			this.status = "normal";
 			winCont.window_resize();
-		};
-	};
+		}
+	}
 
 	changeMap() {	// Change Map Style(rotation)
 		mapLibre.changeMap();
-	};
+	}
 
 	load_static() {	// check static osm mode
 		return new Promise((resolve, reject) => {
@@ -67,14 +67,14 @@ class CMapMaker {
 	}
 
 	viewArea(targets) {			// Area(敷地など)を表示させる
-		console.log(`viewArea: Start.`);
+		console.log(`viewArea: Start.`)
 		targets = targets[0] == "-" ? poiCont.getTargets() : targets;	// '-'はすべて表示
 		targets.forEach((target) => {
-			console.log("viewArea: " + target);
-			let pois = poiCont.getPois(target);
-			mapLibre.addLine({ "type": "FeatureCollection", "features": pois.geojson }, target);
-		});
-		console.log("viewArea: End.");
+			console.log("viewArea: " + target)
+			let pois = poiCont.getPois(target)
+			mapLibre.addPolygon({ "type": "FeatureCollection", "features": pois.geojson }, target)
+		})
+		console.log("viewArea: End.")
 	}
 
 	viewPoi(targets) {		// Poiを表示させる
@@ -106,13 +106,13 @@ class CMapMaker {
 
 	// 画面内のActivity画像を表示させる
 	makeImages() {
-		let LL = mapLibre.get_LL(true);
+		let LL = mapLibre.get_LL(true)
 		let acts = poiCont.adata.filter(act => { return geoCont.checkInner(act.lnglat, LL) && act.picture_url1 !== "" });
 		acts = acts.map(act => {
-			let urls = [];
-			let actname = act.id.split("/")[0];
-			let forms = Conf.activities[actname].form;
-			Object.keys(forms).forEach(key => { if (forms[key].type == "image_url") urls.push(act[key]) });
+			let urls = []
+			let actname = act.id.split("/")[0]
+			let forms = Conf.activities[actname].form
+			Object.keys(forms).forEach(key => { if (forms[key].type == "image_url") urls.push(act[key]) })
 			return { "src": urls, "osmid": act.osmid, "title": act.title }
 		});
 		winCont.setImages(images, acts);
