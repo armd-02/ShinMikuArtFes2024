@@ -349,12 +349,12 @@ class modal_Activities {
                 if (newScale > 3) newScale = 3;  // スケールの上限設定
 
                 // ピンチ中心を基準に画像を拡大・縮小
-                let pinchCenterX = (touch1.pageX + touch2.pageX) / 2;
-                let pinchCenterY = (touch1.pageY + touch2.pageY) / 2;
+                let pinchCenterX = (touch1.pageX + touch2.pageX) / 4;
+                let pinchCenterY = (touch1.pageY + touch2.pageY) / 4;
 
                 // 画像の拡大・縮小に合わせて位置を補正
-                let deltaX = (pinchCenterX - x) * (newScale - scale);
-                let deltaY = (pinchCenterY - y) * (newScale - scale);
+                let deltaX = (pinchCenterX - x) * (newScale - scale) * 0.5;
+                let deltaY = (pinchCenterY - y) * (newScale - scale) * 0.5;
 
                 x -= deltaX;
                 y -= deltaY;
@@ -380,6 +380,9 @@ class modal_Activities {
         }
 
         if (view) {
+            image.removeEventListener("touchmove", handleTouchMove);
+            image.removeEventListener("touchend", handleTouchEnd);
+            image.removeEventListener("touchcancel", handleTouchEnd);
             image.addEventListener("touchmove", handleTouchMove);
             image.addEventListener("touchend", handleTouchEnd);
             image.addEventListener("touchcancel", handleTouchEnd);
